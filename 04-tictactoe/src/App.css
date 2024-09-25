@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-container {
+  margin: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.board-turn-text {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #0056b3;
+}
+
+.singlePlayer-btn, .multiplayer-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+.singlePlayer-btn {
+  background-color: rgb(54, 192, 54);
+}
+
+.singlePlayer-btn:hover {
+  background-color: #66bb6a;
+}
+
+.multiplayer-btn {
+  background-color: lightcoral;
+}
+
+.multiplayer-btn:hover {
+  background-color: #e57373;
+}
