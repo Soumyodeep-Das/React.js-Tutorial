@@ -6,12 +6,12 @@ import TodoButton from './components/TodoButton';
 function App() {
   return (
     <div className='todo-container'>
-      <Header/>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <Header title="Todoie App"/>
+      <TodoItem text="Eat"/>
+      <TodoItem text="Code"/>
+      <TodoItem text="Play"/>
+      <TodoItem text="Study" completed='true'/>
+      <TodoItem text="Sleep"/>
       <TodoButton />
     </div>
   );
