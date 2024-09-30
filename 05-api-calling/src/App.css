@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3a6186, #89253e);
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.img-fluid {
+  border-radius: 15px 0 0 15px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.text-body-secondary {
+  color: #888;
+}
+
+.reset {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0d91dd;
+  color: white;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: aquamarine;
+  color: #333;
+}
