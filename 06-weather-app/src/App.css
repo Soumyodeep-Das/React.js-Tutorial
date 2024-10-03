@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(44, 87, 124);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(87, 177, 255);
+  color: whitesmoke;
+
+}
+
+.navbar-header {
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.searchbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.search-label {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+}
+.searchbar {
+  border: none;
+  border-radius: 15px;
+  width: 60%;
+  height: 40px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.searchbutton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbtn {
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: x-large;
+  border-radius: 10px;
+}
+
+.searchbtn:hover{
+  background-color: bisque;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 70%;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.region, .country, .temparature, .condition {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
