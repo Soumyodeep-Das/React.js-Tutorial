@@ -1,92 +1,177 @@
+/* General Styling */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
-  background-color: rgb(44, 87, 124);
-}
-
-.navbar-container {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5, #ffcc70, #ff6b6b, #845ec2);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(87, 177, 255);
-  color: whitesmoke;
-
+  height: 100vh;
+  color: #333;
 }
 
-.navbar-header {
-  font-size: xx-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-
-.searchbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.search-label {
-  font-size: x-large;
-  font-weight: bold;
-  color: white;
-}
-.searchbar {
-  border: none;
+/* Container */
+.container {
+  width: 95%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
-  width: 60%;
-  height: 40px;
-  padding-left: 10px;
-  margin-left: 20px;
-}
-
-.searchbutton-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.searchbtn {
-  border: none;
-  width: 100px;
-  height: 40px;
-  font-size: x-large;
-  border-radius: 10px;
-}
-
-.searchbtn:hover{
-  background-color: bisque;
-}
-
-.result {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.result-container {
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
+  gap: 20px;
+}
+
+/* NavBar Styling */
+.navbar-container {
+  background-color: #007BFF;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  width: 70%;
+  text-align: center;
+}
+
+.navbar-header {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* SearchBar Styling */
+.searchbar-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-label {
+  font-size: 1.3rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.searchbar {
+  width: 93%;
+  padding: 15px;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.searchbar:focus {
+  border-color: #0056b3;
+}
+
+/* SearchButton Styling */
+.searchbutton-container {
+  width: 100%;
+  text-align: center;
+}
+
+.searchbtn {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.searchbtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ResultCard Styling */
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.result-container {
+  background-color: #f0f4f8;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 20px;
 }
 
 .city-name {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  margin: 10px 0;
+  color: #333;
+  margin: 15px 0;
 }
 
 .region, .country, .temparature, .condition {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  color: #666;
   margin: 5px 0;
+}
+
+.temparature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.condition {
+  font-style: italic;
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .navbar-header {
+    font-size: 2rem;
+  }
+
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .city-name {
+    font-size: 1.8rem;
+  }
+
+  .temparature {
+    font-size: 2rem;
+  }
 }
